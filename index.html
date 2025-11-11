@@ -4,23 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mei Wong Software Developer</title>
+    <title>Mei Wong | Software Developer</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Mei Wong</a>
+    <!--below was originally "navbar navbar-expand-lg", changed it to "navbar navbar-expand-sm", This ensures that the navbar collapses into a hamburger menu 
+    on screens smaller than 576px wide, suitable for most mobile devices. You can find more information under the Responsive Behaviors section in Bootstrap 
+    documentation; -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <!--"container" This was original set to "container-fluid" which stretched across the viewpport.  changing it back to just "container"
+        restricts the navbar width to match other page elements, ensuring visual cohesion across the site.-->
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>Mei Wong</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!--1. In Bootstrap, the classes me-auto and ms-auto play a key role in structuring the layout of elements within a Flexbox container, such as our 
+                navbar. Me-auto stands for Margin end auto, which adds an automatic margin to the end - the right side - of the list, pushing items to the left.If
+                 we want to align our navbar items to the right instead, we can use ms-auto, which stands for margin start auto. This class adds a margin to the
+                 start - the left side - of the ul element, moving all items to the right.
+                 
+                 2. To improve the appearance on medium screens, we will remove the margin classes mb-2 and mb-lg-0 from the 
+                 "<ul class="navbar-nav ms-auto mb-2 mb-lg-0">" Removing the mb-2 helps eliminate unnecessary bottom margins on all breakpoints, simplifying the vertical 
+                    spacing inside the navbar. The mb-lg-0 class removes the bottom margin on large screens when mb-2 is active. Eliminating mb-2 means there is no longer 
+                    a need for mb-lg-0-->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
