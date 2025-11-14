@@ -22,7 +22,41 @@ h2 {
     /*dark-blue*/
 }
 
-/*Hero Image*/
+/*Portfolio*/
+
+#portfolio {
+    background-color: white;
+}
+
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2 rem;
+}
+
+/* I may have chosen to target the base btn class, instead of btn-outline-secondary. In this case, that is a valid choice - because all buttons in the portfolio section have both the 
+btn and btn-outline-secondary classes. However, using btn-outline-secondary is more specific as it is the variation class. Targeting btn is a broad approach that affects all Bootstrap 
+buttons, which might lead to unwanted style changes if we add another button to the portfolio section later.In general, using a more specific class ensures that only the intended 
+elements are modified.*/
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+/*Applying a minimum height of 120px to the .card-text within your portfolio cards ensures that each text block is at least 120 pixels tall, regardless of the amount of content it 
+holds.*/
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/*Contact Section*/
+
+#contact {
+    background-color: #dbdcde;
+    /* light grey*/
+}
+
+
+
+/*Header*/
 
 #hero {
     background-color: lightgrey;
@@ -33,15 +67,13 @@ h2 {
     background-position: 50% 70%;
 }
 
-/*About Section*/
+/* Media Queries*/
 
-#about {
-    background-color: #dbdcde;
-    /* light grey*/
-}
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px) {
 
-/*Portfolio*/
-
-#portfolio {
-    background-color: white;
+    /* Fixes all portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
