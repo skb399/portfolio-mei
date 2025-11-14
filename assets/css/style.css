@@ -22,6 +22,14 @@ h2 {
     /*dark-blue*/
 }
 
+/*We have created the below custom class, If we worked with bootstrap classes and custom IDs, our list of CSS selectors would be very long. A custom class allows us much more 
+flexibility across the site.*/
+/*Using the * Wildcard selects all elements that have a parent with the sharp-corners class (we removed the round corners but the image is still round corners) */
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
+
 /*Portfolio*/
 
 #portfolio {

@@ -130,7 +130,7 @@
                 </div>
                 <!-- cols for cards -->
                 <div class="col-12 col-md-6">
-                    <div class="card mb-3">
+                    <div class="card mb-3 sharp-corners ">
                         <img src="assets/images/wags-and-walks.webp" class="card-img-top"
                             alt="A man walking several dogs early in the morning">
                         <div class="card-body">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="card mb-3">
+                    <div class="card mb-3 sharp-corners">
                         <img src="assets/images/we-wellness.webp" class="card-img-top"
                             alt="A spa with candles towels and natural material">
                         <div class="card-body">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="card mb-3">
+                    <div class="card mb-3 sharp-corners">
                         <img src="assets/images/math-wiz.webp" class="card-img-top"
                             alt="A child practicing math at a computer">
                         <div class="card-body">
@@ -179,7 +179,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="card mb-3">
+                    <div class="card mb-3 sharp-corners">
                         <img src="assets/images/bmi-calculator.webp" class="card-img-top"
                             alt="Weighing scales seen from the first person view of the person standing on the scales">
                         <div class="card-body">
@@ -203,58 +203,61 @@
         <!--Emmet shorthand for below - col.12.text-center.my-4 (I didn't specify div.col-12 because Emmet assumes div by default. 
        for example, div.col-12, and .col-12 will create the same div element.)-->
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center my-4">Contact</h2>
-            <col class="12 text-center my-4">
+            <div class="col-12 text-center my-4">
+                <h2 class="display-5">Contact</h2>
+                <p class="mt-4">Got questions or ideas? I'd love to hear from you! Whether you're interested in
+                    collaboration, have inquiries about my projects, or wish to request a copy of my CV, please don't
+                    hesitate to get in touch. I'm always open to discussing new opportunities and how we can work
+                    together
+                    to create something amazing!</p>
+
+            </div>
+
             <!--Emmet shorthand for below - p.mt-4 (The heading will use a display-5 class for consistency with the rest of the headings'
              styling, and we'll name it Contact.)-->
-            <p class="mt-4">Got questions or ideas? I'd love to hear from you! Whether you're interested in
-                collaboration, have inquiries about my projects, or wish to request a copy of my CV, please don't
-                hesitate to get in touch. I'm always open to discussing new opportunities and how we can work together
-                to create something amazing!</p>
+
             <!--Emmet shorthand for below ".col-12.col-md.col.lg-8" - We want it to be responsive so it doesn't get too wide on larger screens.-->
             <!--Emmet shorthand for text is "lorem" this generates 30 words in lorem ipsum text so we can see what the layout looks like ONCE YOU'VE CHECKED IT 
             MAKE SURE TO DELETE THE TEXT AND ENTER YOUR REAL TEXT!!-->
-            <div>
-                <div class="col-12 col-md-10 col-lg-8 mb-4">
-                    <!-- Add your form here -->
-                    <!--The g-3 class in the form you pasted in from Bootstrap creates a uniform gap between each of its children, improving spacing and clarity. 
+            <div class="col-12 col-md-10 col-lg-8 mb-4">
+                <!-- Add your form here -->
+                <!--The g-3 class in the form you pasted in from Bootstrap creates a uniform gap between each of its children, improving spacing and clarity. 
                     This keeps your forms functional and visually appealing.
 
                     When nesting columns within grids, as we have done in our form, always ensure that the nested columns are placed within their own row. This 
                     is essential for the Bootstrap flexbox to function correctly.-->
-                    <form class="row g-3">
-                        <div class="col-lg-4">
-                            <label for="full-name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="full-name">
-                        </div>
-                        <div class="col-lg-4">
-                            <label for="phonenumber" class="form-label">Phone number</label>
-                            <input type="number" class="form-control" id="phonenumber">
-                        </div>
-                        <div class="col-lg-4">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-                </div>
+                <form class="row g-3 sharp-corners">
+                    <div class="col-lg-4">
+                        <label for="full-name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="full-name">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="phonenumber" class="form-label">Phone number</label>
+                        <input type="number" class="form-control" id="phonenumber">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 ">
+                        <button type="submit" class="btn btn-primary sharp-corners">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
-
-
         </div>
+
+
     </footer>
     <!-- Bootstrap modal -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content sharp-corners">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
